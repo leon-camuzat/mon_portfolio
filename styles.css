@@ -1,0 +1,489 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Navigation */
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease; /* Animation fluide */
+}
+
+nav ul li a:hover {
+    color: #E79098 /* Change la couleur du texte en bleu */
+}
+
+/* Media query pour les écrans plus petits (mobiles) */
+@media (max-width: 768px) {
+    /* Mise en colonne des éléments du menu */
+    nav ul {
+        display: block;
+        gap: 10px; /* Réduit l'espacement entre les éléments en mode mobile */
+        text-align: center; /* Centrer les éléments */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Ajoute un espace entre chaque élément */
+    }
+
+    /* Optionnel : Modifier la taille du texte pour les petits écrans */
+    .logo {
+        font-size: 1.2em; /* Réduit la taille de la police pour les petits écrans */
+    }
+}
+/* Page d'accueil */
+.homepage h1 {
+    margin-top: 25px;
+    font-size: 2.5em;
+}
+
+.profile-photo {
+    display: block;
+    width: 200px; /* Définir la largeur */
+    height: 200px; /* Définir la hauteur pour garantir un carré */
+    margin: 10px auto; /* Centrer l'image horizontalement */
+    border-radius: 50%; /* Faire en sorte que l'image soit ronde */
+    object-fit: cover; /* Assure que l'image s'adapte bien dans le cercle */
+}
+
+/* Style de base des boutons */
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #000;  /* Fond noir par défaut */
+    color: #fff;       /* Texte blanc par défaut */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: color 0.3s ease;  /* Transition pour un changement de couleur fluide */
+}
+
+/* Effet de survol uniquement sur le texte */
+.buttons a:hover {
+    color:#a9e4f9  /* Le texte devient bleu électrique */
+}
+
+/* Page projets */
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.project-tile img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.project-tile img:hover {
+    transform: scale(1.05);
+}
+
+/* Page contact */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.contact-page h1 {
+    margin-bottom: 20px;
+}
+
+.contact-page a {
+    color: #000;  /* Couleur par défaut noire pour les liens */
+    text-decoration: none;  /* Enlève le soulignement */
+    font-weight: bold;  /* Texte en gras */
+    margin: 10px 0;  /* Espacement vertical */
+    transition: color 0.3s ease, transform 0.3s ease;  /* Transition fluide pour la couleur et la mise en forme */
+}
+
+/* Effet hover sur les liens de contact (email et téléphone) */
+.contact-page a:hover {
+    color: #a9e4f9 ;  /* Changer la couleur en bleu au survol */
+    transform: scale(1.1);  /* Légère mise à l'échelle au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mosaic {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .mosaic {
+        grid-template-columns: 1fr;
+    }
+}
+/* Page À propos */
+.apropos-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+    padding: 0 25px; /* Espacement global uniquement à gauche et droite */
+}
+
+.apropos-page h1 {
+    margin-top: 25px;
+    font-size: 2.5em;
+    text-align: center; /* Centre le titre horizontalement */
+}
+
+.apropos-page .content {
+    text-align: center; /* Centre le texte horizontalement */
+    max-width: 800px; /* Limite la largeur du texte */
+    margin-top: 50px; /* Ajoute un peu d'espace entre le titre et le texte */
+}
+/* Style spécifique pour la page Site Internet */
+
+/* Titre principal */
+.main-title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: black; /* Couleur bleue douce pour le titre */
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Section générale */
+.section-content {
+    margin: 30px auto; /* Ajoute de l'air autour des sections */
+    padding: 25px; /* Espace interne dans chaque section */
+    max-width: 900px; /* Largeur maximale des sections */
+    background: transparent; /* Fond transparent pour plus de légèreté */
+    text-align: left; /* Alignement du texte à gauche */
+    border-radius: 10px; /* Coins arrondis pour plus de fluidité */
+}
+
+/* Titres des sections */
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #a9e4f9; /* Bleu pour harmoniser avec le titre principal */
+    border-bottom: 2px solid #a9e4f9; /* Ligne de séparation sous le titre */
+    padding-bottom: 5px;
+}
+
+/* Paragraphes */
+.section-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8; /* Plus d'espace entre les lignes */
+    color: #333; /* Couleur légèrement grisée pour le texte */
+}
+
+/* Listes */
+ul {
+    margin: 20px 0 20px 40px; /* Espacement autour des listes */
+    padding-left: 20px; /* Décalage des listes */
+    list-style-type: disc; /* Points standards pour les listes */
+}
+
+ul li {
+    margin-bottom: 15px; /* Ajoute de l'espace entre chaque élément */
+    line-height: 1.6; /* Améliore la lisibilité */
+    font-size: 1.1em; /* Taille légèrement agrandie */
+    color: #555; /* Couleur neutre */
+}
+ul li:hover {
+    color: #E79098; /* Change la couleur du texte au survol */
+}
+
+
+
+/* Images */
+.conception-image {
+    display: block;
+    margin: 30px auto; /* Centre l'image et ajoute de l'air autour */
+    max-width: 100%; /* Adapte l'image à la largeur de l'écran */
+    height: auto; /* Préserve le ratio de l'image */
+    border-radius: 10px; /* Coins arrondis pour l'image */
+    transition: transform 0.3s ease; /* Animation légère au survol */
+}
+
+/* Effet survol image */
+.conception-image:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+/* Espacement supplémentaire entre les sections */
+.section-content + .section-content {
+    margin-top: 50px; /* Ajoute de l'air entre les sections */
+}
+
+/* Responsive Design pour la page */
+@media (max-width: 768px) {
+    .section-content {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 2em;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-content {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .main-title {
+        font-size: 1.8em;
+    }
+
+    .section-title {
+        font-size: 1.3em;
+    }
+
+    ul {
+        margin: 15px 0 15px 20px;
+    }
+}
+/* Titre principal */
+.main-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 3.2em; /* Taille assez grande pour mettre en valeur le titre */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Ta typographie actuelle */
+    color: #2C3E50; /* Gris bleuté, moins dur que le noir */
+    text-align: center; /* Titre centré */
+    font-weight: normal; /* Pas trop lourd, juste raffiné */
+    letter-spacing: 2px; /* Légèrement espacé pour une meilleure lisibilité */
+    line-height: 1.3; /* Espacement léger entre les lignes pour donner de l'air */
+    text-transform: uppercase; /* Capitalisation pour l'élégance */
+}
+
+/* Effet de survol discret */
+.main-title:hover {
+    color: #a9e4f9; /* Change la couleur en bleu clair au survol */
+    transition: color 0.3s ease-out; /* Transition douce sur la couleur */
+}
+footer {
+    position: fixed; /* Fixe le footer en bas */
+    bottom: 0; /* Place le footer tout en bas */
+    left: 0; /* Place le footer à gauche */
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Augmente l'espace entre les logos */
+    padding: 10px;
+    background-color: transparent; /* Supprime le fond gris */
+}
+
+footer a {
+    text-decoration: none; /* Supprime le soulignement sur les liens */
+}
+
+footer .social-icon {
+    width: 50px; /* Taille augmentée des logos */
+    height: 50px;
+    transition: transform 0.3s ease; /* Animation fluide au survol */
+}
+
+footer .social-icon:hover {
+    transform: scale(1.3); /* Agrandit encore plus au survol */
+}
+
+#square {
+    width: 9vw;  /* 10% de la largeur de la fenêtre */
+    height: 9vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #a9e4f9;
+    position: absolute;
+}
+
+#square2 {
+    width: 9vw;  /* 10% de la largeur de la fenêtre */
+    height: 9vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #c5e97d;
+    position: absolute;
+    left: 9vw;  /* 10% de la largeur de la fenêtre */
+    top: 42vh;   /* 10% de la hauteur de la fenêtre */
+}
+
+#square3 {
+    width: 9vw;  /* 10% de la largeur de la fenêtre */
+    height: 9vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #a9e4f9;
+    position: absolute;
+    left: 18vw;  /* 20% de la largeur de la fenêtre */
+    top: 30vh;   /* 20% de la hauteur de la fenêtre */
+}
+
+#square4 {
+    width: 9vw;  /* 10% de la largeur de la fenêtre */
+    height: 9vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #a9e4f9;
+    position: absolute;
+    left: 82vw;  /* 40% de la largeur de la fenêtre */
+    top: 59vh;   /* 35% de la hauteur de la fenêtre */
+}
+
+#square5 {
+    width: 9vw;  /* 10% de la largeur de la fenêtre */
+    height: 9vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #c5e97d;
+    position: absolute;
+    left: 91vw;  /* 45% de la largeur de la fenêtre */
+    top: 79vh;   /* 45% de la hauteur de la fenêtre */
+}
+#square6 {
+    width: 6vw;  /* 10% de la largeur de la fenêtre */
+    height: 6vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #a9e4f9;
+    position: absolute;
+}
+
+#square7 {
+    width: 6vw;  /* 10% de la largeur de la fenêtre */
+    height: 6vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #c5e97d;
+    position: absolute;
+    left: 2vw;  /* 10% de la largeur de la fenêtre */
+    top: 42vh;   /* 10% de la hauteur de la fenêtre */
+}
+
+#square8 {
+    width: 6vw;  /* 10% de la largeur de la fenêtre */
+    height: 6vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #a9e4f9;
+    position: absolute;
+    left: 11vw;  /* 20% de la largeur de la fenêtre */
+    top: 22vh;   /* 20% de la hauteur de la fenêtre */
+}
+
+#square9 {
+    width: 6vw;  /* 10% de la largeur de la fenêtre */
+    height: 6vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #a9e4f9;
+    position: absolute;
+    left: 82vw;  /* 40% de la largeur de la fenêtre */
+    top: 40vh;   /* 35% de la hauteur de la fenêtre */
+}
+
+#square10 {
+    width: 6vw;  /* 10% de la largeur de la fenêtre */
+    height: 6vw; /* Hauteur égale à la largeur pour garder la forme carrée */
+    background: #c5e97d;
+    position: absolute;
+    left: 91vw;  /* 45% de la largeur de la fenêtre */
+    top: 30vh;   /* 45% de la hauteur de la fenêtre */
+}
+/* Texte en noir */
+/* Texte en noir */
+body {
+    color: black;
+    text-align: center; /* Centre tout le texte */
+}
+
+/* Suppression des puces de la liste */
+/* Supprime les puces des listes */
+ul {
+    list-style: none; /* Enlève les points */
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Style des éléments de la liste */
+ul li {
+    font-size: 1.1em;
+    color: black;
+}
+
+/* Liens noirs par défaut */
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet hover uniquement sur le lien */
+a:hover {
+    color: #a9e4f9 /* Rouge/orangé/rosé */
+}
+/* Applique la nouvelle police à tout le site */
+body {
+    font-family: 'Poppins', sans-serif; /* Remplace par 'Montserrat' si tu préfères */
+    color: black;
+    text-align: center; /* Centre tout le texte */
+}
+/* Supprime les puces des listes */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Conteneur global pour chaque documentation */
+.doc-item {
+    margin-bottom: 15px; /* Espacement entre chaque item */
+}
+
+/* Style du titre (lien) */
+.doc-title a {
+    font-size: 1.2em; /* Taille plus grande */
+    font-weight: bold;
+    color: black;
+    text-decoration: none; /* Pas de soulignement */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Changement de couleur uniquement sur le lien */
+.doc-title a:hover {
+    color: #a9e4f9; /* Rouge/orangé/rosé */
+}
+
+/* Style de la description */
+.doc-description {
+    font-size: 1em;
+    color: #555; /* Gris pour ne pas trop attirer l'attention */
+    margin-top: 3px; /* Espacement entre le titre et la description */
+}
