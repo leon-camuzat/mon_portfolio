@@ -487,3 +487,29 @@ ul {
     color: #555; /* Gris pour ne pas trop attirer l'attention */
     margin-top: 3px; /* Espacement entre le titre et la description */
 }
+/* Documentation - style épuré */
+main ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+main ul li {
+    padding: 4px 20px;
+    margin-bottom: 2px;
+    font-size: 1.1em;
+    color: black;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+main ul li:hover {
+    transform: translateX(8px);
+    color: #E79098;
+}
+
+main h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
