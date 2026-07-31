@@ -24,23 +24,22 @@
 
     <h2>🎓 2ème Année — Licence d'Administrateur d'Infrastructures Réseaux Sécurisées</h2>
 
-    <h3>DevOps & Automatisation</h3>
+    <h3>⚙️ DevOps & Automatisation</h3>
     <ul>
-        <li><a href="Doc_Portfolio/📚Documentation_Terraform.pdf" target="_blank"><strong>🔷 Terraform</strong></a> — <em>Automatisation du déploiement d'une VM Debian 13 sur VMware Workstation et lab cyber avec une VM attaquante et une VM hébergeant un serveur Web, scan des ports d'écoute avec nmap.</em></li>
+        <li><a href="Doc_Portfolio/📚Documentation_Terraform.pdf" target="_blank"><strong>🔷 Terraform</strong></a> — <em>Automatisation du déploiement d'une VM Debian 13 sur VMware Workstation et d'un lab cyber avec une VM attaquante et une VM hébergeant un serveur Web, scan des ports d'écoute avec nmap.</em></li>
         <li><a href="Projets_Plateforme/Ansible/Ansible_Présentation.pdf" target="_blank"><strong>🤖 Ansible</strong></a> — <em>Automatisation sans agent de la configuration et du hardening de 3 serveurs Linux : durcissement SSH, pare-feu UFW et gestion des services via playbooks.</em></li>
         <li><a href="Projets_Plateforme/Kubernetes/Documentation_Kubernetes.pdf" target="_blank"><strong>☸️ Kubernetes</strong></a> — <em>Montage d'un cluster K3S sur 3 VMs Debian (1 master, 2 workers), déploiement d'applications conteneurisées via YAML (Nginx, Apache, MariaDB), haute disponibilité avec replicas, stockage persistant, ConfigMaps, Secrets, RBAC et gestion via Helm.</em></li>
         <li><a href="Projets_Plateforme/Docker Swarm/Docker_Swarm_Documentation.pdf" target="_blank"><strong>🐳 Docker Swarm</strong></a> — <em>Déploiement d'un cluster Docker Swarm de 7 VMs Debian (3 managers Raft, 3 workers, 1 serveur NFS) pour la continuité d'activité : services conteneurisés (Registry, MariaDB, PHP, Nginx, VSCode Server), supervision via Portainer, Prometheus et Grafana, validation par 3 tests PCA/PRA.</em></li>
         <li><a href="Doc_Portfolio/9📚Documentation_VM_&_Docker_Runtrack_Projet.pdf" target="_blank"><strong>🐳 Docker</strong></a> — <em>Prise en main de Docker sur VM Debian : installation, commandes de base, création d'images personnalisées via Dockerfile.</em></li>
-        <li><a href="documents/PSMM.pdf" target="_blank"><strong>🧩 PSMM</strong></a> — <em>Infrastructure de surveillance de 4 VMs Debian (FTP, Web, MariaDB + VM de contrôle), scripts Python via SSH pour collecter les tentatives d'accès échouées, stockage des incidents en base MariaDB et envoi de rapports quotidiens par mail.</em></li>
     </ul>
 
-      <h3>Systèmes</h3>
-     <ul>
-        <li><a href="Projets_Plateforme/Holodeck (VMs).pdf"  target="_blank"><strong>👾 Holodeck</strong></a> — <em>Déploiement d'un serveur web multi-services sur VM Debian : Nginx HTTPS, PHP 7 et 8 en cohabitation, MariaDB, FTP SSL/TLS, DHCP/DNS, annuaire LDAP pour l'authentification et pare-feu configuré.</em></li>
+    <h3>🖥️ Systèmes</h3>
+    <ul>
         <li><a href="Projets_Plateforme/PSMM/PSMM.pdf" target="_blank"><strong>🧩 Security Log Monitor</strong></a> — <em>Scripts Python via SSH pour monitorer 3 serveurs Debian (FTP, Web, MariaDB) : collecte des tentatives d'accès échouées, stockage en base MariaDB et envoi de rapports journaliers par mail.</em></li>
+        <li><a href="Projets_Plateforme/Holodeck (VMs).pdf" target="_blank"><strong>👾 Holodeck</strong></a> — <em>Déploiement d'un serveur web multi-services sur VM Debian : Nginx HTTPS, PHP 7 et 8 en cohabitation, MariaDB, FTP SSL/TLS, DHCP/DNS, annuaire LDAP pour l'authentification et pare-feu configuré.</em></li>
     </ul>
 
-    <h3>Cloud</h3>
+    <h3>☁️ Cloud</h3>
     <ul>
         <li><a href="documents/Azure_AD.pdf" target="_blank"><strong>☁️ Azure AD</strong></a> — <em>Configuration et sécurisation de Microsoft Entra ID : politiques MFA et accès conditionnel, automatisation de la gestion des utilisateurs et groupes via PowerShell, intégration SSO et surveillance des incidents de sécurité.</em></li>
         <li><a href="documents/AWS.pdf" target="_blank"><strong>☁️ AWS</strong></a> — <em>Administration d'une infrastructure AWS : gestion IAM (utilisateurs, groupes, principe du moindre privilège, MFA), instances EC2 (Elastic IP, ENI, groupes de placement, hibernation), base de données RDS MySQL avec Read Replica et stockage S3.</em></li>
@@ -50,39 +49,41 @@
 
     <h3>🔒 Sécurité</h3>
     <ul>
-        <li><a href="documents/Bastion.pdf" target="_blank"><strong>🛡️ Bastion — Portail Guacamole</strong></a> — <em>Installation, configuration et sécurisation d'un bastion avec portail Guacamole.</em></li>
-        <li><a href="documents/WireShark.pdf" target="_blank"><strong>🦈 WireShark</strong></a> — <em>Analyse de trames réseau et documentation technique.</em></li>
         <li><a href="documents/MiniLab.pdf" target="_blank"><strong>🏠 Mini Lab</strong></a> — <em>Déploiement d'une infrastructure réseau complète : serveur NFS en RAID5, DHCP/DNS/LDAP en master/slave avec failover, pare-feu, VPN et authentification PAM-LDAP pour profils itinérants.</em></li>
+        <li><a href="documents/Bastion.pdf" target="_blank"><strong>🛡️ Bastion — Portail Guacamole</strong></a> — <em>Installation d'un bastion Apache Guacamole sur Debian : accès RDP, SSH et VNC via navigateur, reverse proxy Nginx HTTPS, gestion des groupes et utilisateurs, isolation réseau via double interface.</em></li>
+        <li><a href="documents/VPN.pdf" target="_blank"><strong>🔐 VPN</strong></a> — <em>Déploiement d'un serveur OpenVPN sur Debian : génération de certificats via easy-rsa, chiffrement AES et configuration client/serveur sur maquette VM.</em></li>
+        <li><a href="documents/WireShark.pdf" target="_blank"><strong>🦈 WireShark</strong></a> — <em>Analyse de trames réseau avec Wireshark : capture de paquets ARP, UDP et TCP, désencapsulation selon le modèle OSI, filtrage avancé et analyse de protocoles (DHCP, DNS, FTP, HTTPS, SMB).</em></li>
     </ul>
 
     <h3>🖥️ Windows Server</h3>
     <ul>
-        <li><a href="Doc_Portfolio/RENDU_Serveur PXE - Active Directory.pdf" target="_blank"><strong>🏭 Windows Server — PXE</strong></a> — <em>Installation, configuration et sécurisation d'un serveur Windows Server PXE.</em></li>
-        <li><a href="Doc_Portfolio/DOC_Active Directory.pdf" target="_blank"><strong>🏢 Windows Server — Active Directory</strong></a> — <em>Installation, configuration et sécurisation d'un serveur Active Directory.</em></li>
+        <li><a href="Doc_Portfolio/DOC_Active Directory.pdf" target="_blank"><strong>🏢 Windows Server — Active Directory</strong></a> — <em>Installation de Windows Server 2025 sur VMware : configuration DHCP, DNS et Active Directory, création d'OUs, groupes avec nesting, dossiers partagés avec droits SMB/NTFS, GPOs, mapping de lecteurs réseau et import d'utilisateurs via script CSV.</em></li>
+        <li><a href="Doc_Portfolio/RENDU_Serveur PXE - Active Directory.pdf" target="_blank"><strong>🏭 Windows Server — PXE</strong></a> — <em>Déploiement d'images Windows via réseau : installation WDS/ADK, création d'images WinPE personnalisées, déploiement PXE et configuration d'un serveur TFTP open source.</em></li>
     </ul>
 
     <h3>🗄️ Stockage</h3>
     <ul>
-        <li><a href="Doc_Portfolio/DOC_True_Nas_Scale.pdf" target="_blank"><strong>🗄️ Serveur TrueNAS Scale (RAIDZ2)</strong></a> — <em>Serveur de stockage complet avec RAIDZ2 et sauvegarde automatisée.</em></li>
-        <li><a href="Doc_Portfolio/DOC_NAS_RAID5.pdf" target="_blank"><strong>💾 Serveur NAS RAID5</strong></a> — <em>Mise en place d'un NAS RAID5 avec partages SFTP, Samba et WebDAV.</em></li>
+        <li><a href="Doc_Portfolio/DOC_True_Nas_Scale.pdf" target="_blank"><strong>🗄️ Serveur TrueNAS Scale (RAIDZ2)</strong></a> — <em>Serveur TrueNAS Scale avec RAIDZ2 : partages Samba, SFTP et WebDAV, VaultWarden, sauvegarde automatisée via Rsync et VM hébergée sur le serveur.</em></li>
+        <li><a href="Doc_Portfolio/DOC_NAS_RAID5.pdf" target="_blank"><strong>💾 Serveur NAS (RAID5)</strong></a> — <em>NAS Debian en RAID5 : partages SFTP, Samba et WebDAV, simulation de perte/récupération de disque, alertes email, sauvegarde automatique sur second NAS et interface Cockpit.</em></li>
     </ul>
 
     <h3>🌐 Réseau & Services</h3>
     <ul>
-        <li><a href="documents/Debian_DHCP_DNS_SFTP_SSH.pdf" target="_blank"><strong>🐧 Serveur DHCP, DNS, SFTP, SSH</strong></a> — <em>Déploiement d'un serveur DHCP, DNS et SFTP pour transferts chiffrés via SSH.</em></li>
-        <li><a href="documents/LDAP.pdf" target="_blank"><strong>📒 Serveur LDAP</strong></a> — <em>Déploiement et configuration d'un serveur LDAP.</em></li>
-        <li><a href="Doc_Portfolio/DOC_Voip.pdf" target="_blank"><strong>📞 Serveur VOIP</strong></a> — <em>Serveur VOIP avec Asterisk et sécurisation via Kamailio.</em></li>
-        <li><a href="documents/VPN.pdf" target="_blank"><strong>🔐 VPN</strong></a> — <em>Déploiement et sécurisation d'un VPN.</em></li>
-        <li><a href="documents/Cisco_Gateway.pdf" target="_blank"><strong>🌐 Cisco Packet Tracer : Gateway</strong></a> — <em>Simulation d'une Gateway et envois de paquets de données.</em></li>
+        <li><a href="documents/LDAP.pdf" target="_blank"><strong>📒 Serveur LDAP</strong></a> — <em>Déploiement d'un serveur OpenLDAP : création de groupes et utilisateurs, sécurisation avec le module ppolicy (politique de mots de passe) et authentification FTP via LDAP.</em></li>
+        <li><a href="Doc_Portfolio/DOC_Voip.pdf" target="_blank"><strong>📞 Serveur VOIP</strong></a> — <em>Installation et configuration d'Asterisk sur Debian compilé depuis les sources : configuration SIP, plan d'appel et tests d'appels entre softphones.</em></li>
+        <li><a href="documents/Debian_DHCP_DNS_SFTP_SSH.pdf" target="_blank"><strong>🐧 Serveur DHCP, DNS, SFTP, SSH</strong></a> — <em>Déploiement de 2 VMs Debian : serveur DHCP/DNS pour attribution automatique d'adresses IP et serveur SFTP/SSH pour transferts de fichiers chiffrés.</em></li>
+        <li><a href="documents/Cisco_Gateway.pdf" target="_blank"><strong>🌐 Cisco Packet Tracer — Gateway</strong></a> — <em>Simulation d'une Gateway sous Cisco Packet Tracer : interconnexion de 2 réseaux via un routeur, configuration des interfaces et test de connectivité par ping.</em></li>
+        <li><a href="documents/Cisco_DHCP.pdf" target="_blank"><strong>🌐 Cisco Packet Tracer — DHCP</strong></a> — <em>Simulation d'un réseau DHCP sous Cisco Packet Tracer : câblage de 3 PCs, 1 switch et 1 serveur avec attribution automatique d'adresses IP.</em></li>
     </ul>
 
     <h3>⌨️ Systèmes & Scripting</h3>
     <ul>
+        <li><a href="documents/Scripts.pdf" target="_blank"><strong>📜 Scripts Shell & Python</strong></a> — <em>Pratique des commandes Linux avancées sur Debian : recherche de fichiers, compression tar/gzip, manipulation de données avec awk et Python, gestion des processus et surveillance des ressources système.</em></li>
+        <li><a href="documents/Bash_Shell.pdf" target="_blank"><strong>🐚 Bash Shell</strong></a> — <em>Prise en main de l'interface en ligne de commande sous Debian : commandes Linux, gestion de fichiers et scripts Bash.</em></li>
         <li><a href="documents/Config_OS_Virtualisation.pdf" target="_blank"><strong>🖥️ Config OS & Virtualisation</strong></a> — <em>Configuration des systèmes d'exploitation et virtualisation avec VMware.</em></li>
-        <li><a href="documents/Bash_Shell.pdf" target="_blank"><strong>🐚 Bash Shell</strong></a> — <em>Introduction à l'interface en ligne de commande Shell.</em></li>
-        <li><a href="documents/Scripts.pdf" target="_blank"><strong>📜 Système, Scripts & Sécurité</strong></a> — <em>Édition de scripts Shell & Python pour l'administration système.</em></li>
+        <li><a href="documents/Dual_Boot.pdf" target="_blank"><strong>🔄 Dual-Boot Windows/Linux</strong></a> — <em>Configuration d'un dual-boot Windows/Debian sur VMware Workstation Pro.</em></li>
     </ul>
 
-</main>
+    </main>
 </body>
 </html>
